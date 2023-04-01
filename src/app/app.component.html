@@ -1,27 +1,19 @@
 <nav class="navbar bg-dark">
   <div class="container-fluid justify-content-center">
-    <a class="navbar-brand text-light" href="#">Piano</a>
+    <a class="navbar-brand text-light" href="#">{{titulo}}</a>
   </div>
 </nav>
 <br>
 <div class="container">
 
   <div class="list-group">
-  <a href="#" class="list-group-item list-group-item-action">A simple default list group item</a>
+    <a (click)="aplicarSonido(do)"  class="list-group-item list-group-item-action list-group-item-primary text-center">DO</a>
+    <a (click)="aplicarSonido(re)"  class="list-group-item list-group-item-action list-group-item-secondary text-center">RE</a>
+    <a (click)="aplicarSonido(mi)"  class="list-group-item list-group-item-action list-group-item-success text-center">MI</a>
+    <a (click)="aplicarSonido(fa)"  class="list-group-item list-group-item-action list-group-item-danger text-center">FA</a>
+    <a (click)="aplicarSonido(sol)" class="list-group-item list-group-item-action list-group-item-warning text-center">SOL</a>
+    <a (click)="aplicarSonido(la)"  class="list-group-item list-group-item-action list-group-item-info text-center">LA</a>
+    <a (click)="aplicarSonido(si)"  class="list-group-item list-group-item-action list-group-item-light text-center">SI</a>
+  </div>
 
-  <a href="#" class="list-group-item list-group-item-action list-group-item-primary">A simple primary list group item</a>
-  <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">A simple secondary list group item</a>
-  <a href="#" class="list-group-item list-group-item-action list-group-item-success">A simple success list group item</a>
-  <a href="#" class="list-group-item list-group-item-action list-group-item-danger">A simple danger list group item</a>
-  <a href="#" class="list-group-item list-group-item-action list-group-item-warning">A simple warning list group item</a>
-  <a href="#" class="list-group-item list-group-item-action list-group-item-info">A simple info list group item</a>
-  <a href="#" class="list-group-item list-group-item-action list-group-item-light">A simple light list group item</a>
-  <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
-</div>
-
-<audio controls autoplay>
-  <source src="assets/sonidos/re.wav" >
-
-</audio>
-
-</div>
+ 
